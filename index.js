@@ -1,5 +1,7 @@
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up! 🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
+const { labeledStatement } = require("@babel/types");
+
 /*MAKE SURE TO RETURN ALL OF THE ANSWERS INSIDE OF A FUNCTION (tasks 1d through task 7), IF YOU DON'T, THE AUTOGRADER WILL NOT WORK*/
 
 // task 1a, 1b, and 1c are not autograded
@@ -20,6 +22,7 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 37;
 
 
 /*
@@ -33,9 +36,16 @@ Do the following:
    HINT: no function required
 */
 
+var gambleingAge = 67;
+var smokeingAge = 21;
 
 
-
+if (smokeingAge < 20) {
+  gambleingAge = 11;
+} else {
+  gambleingAge = 21;
+}
+console.log(gambleingAge)
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -48,7 +58,12 @@ Do the following:
    HINT: look up the Number method
 */
 
+let paperWeight = "1999";
 
+const paperPlane = parseInt(paperWeight);
+console.log(paperPlane);
+
+// this one was strange..had a few that runs the same # as 1999, id like to see decimal or negative intergers for a more dramatic change on conversion. all this showed was the same number without the "".
 
 
 /*
